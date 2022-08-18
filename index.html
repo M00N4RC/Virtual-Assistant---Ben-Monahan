@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+    <meta charset="utf-8"/>
+<!-- calling relevant p5.js libraries     -->
+    <script src="sketch.js"></script>
+    <script src="libraries/p5.js" type="text/javascript"></script>
+    <script src="libraries/p5.dom.js"  type="text/javascript"></script>
+    <script src="libraries/p5.sound.js" type="text/javascript"></script>
+    <script src="libraries/p5.speech.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/gh/IDMNYU/p5.js-speech@0.0.3/lib/p5.speech.js"></script>
+  </head>
+  <body>
+    
+<!--  creates black squares to cover time, date and weather    -->
+        <div style="width:500px;height:100px;border:1px solid #000;" id="cover1"></div>
+    
+        <div style="width:500px;height:100px;border:1px solid #000;" id="cover2"></div>
+    
+<!--   iframe for google search   -->
+    <iframe src="https://www.google.com/webhp?igu=1&gws_rd=ssl" id ="search" width="640" height="480" frameborder="0"></iframe>
+    
+<!--   iframe for an individuals specific folder in google drive using the folders URL   -->
+    <iframe src="https://drive.google.com/embeddedfolderview?id=1dRBf-yV13HoCFGLJvzFiPw5a1WvmY3r9" id='Files' width="800" height="600" frameborder="0"></iframe>
+    
+<!--  creates textbox, to use as notepad    -->
+    <div>
+      <textarea id ="notes" class="note">Note Pad</textarea>
+    </div>
+    
+<!--  creates the input/search bar for the weather    -->
+     <p>
+     <input id ="city" value="" style="background-color: rgb(0,0,0);"></input>
+  <br/>
+<!--  enter button for weather input  -->
+  <button id="enter" style="border: 1px solid #2196F3">enter</button>
+</p>
+
+
+  </body>
+</html>
