@@ -318,7 +318,7 @@ function draw() {
 
   //sizing and position of GIF and image of arc rings in center circle
   push();
-  ing.position(windowWidth / 2.42, 449);
+  ing.position(windowWidth / 2.40, 449);
   ing.size(388, 390);
   pop();
 
